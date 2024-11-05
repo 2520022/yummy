@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <title>Yummy</title>
+</head>
+
+<body class="bg-black">
+
+    <div class="side-bar  z-3 position-fixed start-0 vh-100  w-18">
+        <div class="container vh-100">
+            <div class="row position-relative">
+                <div class="col-9 bg-black position-absolute" id="sideBar">
+                    <div class="inner text-white vh-100 d-flex flex-column justify-content-between">
+                        <div class="links py-4 px-2">
+                            <ul class="list-unstyled" id="sidebar">
+                                <li onclick="displaySearch()" class="my-3">Search</li>
+                                <li onclick="getCategories()" class="my-3">Categories</li>
+                                <li onclick="getAreas()" class="my-3">Area</li>
+                                <li onclick="getIngrediants()" class="my-3">Ingredients</li>
+                                <li onclick="displayContact()" class="my-3">Contact Us</li>
+                            </ul>
+                        </div>
+                        <div class="icons-copy p-3">
+                            <span><i class="fab fa-facebook"></i></span>
+                            <span><i class="fab fa-twitter"></i></span>
+                            <span><i class="fa-solid fa-globe"></i></span>
+                            <p>Copyright Â© 2019 All Rights
+                                Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="control" class="col-3  bg-white position-absolute">
+                    <div class="inner text-center  vh-100 d-flex flex-column justify-content-between">
+                        <img src="imgs/logo.png" class="w-100 py-3" alt="">
+                        <span class="open-close"><i id="toggle" class="fa-solid fa-align-justify fa-2x"></i></span>
+                        <div class="icons py-4 d-flex flex-column">
+                            <span><i class="fa-solid fa-globe"></i></span>
+                            <span><i class="fa-solid fa-share-nodes"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="search">
+        <div class="container pt-3">
+            <div class="row" id="searchContainer">
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="data py-5 ">
+        <div class=" container item-preview">
+            <div class="row g-4" id="data">
+                
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/logic.js"></script>
+</body>
+
+</html>
